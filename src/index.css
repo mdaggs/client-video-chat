@@ -1,0 +1,76 @@
+
+.top-bar {
+    display: flex;
+    background: #395363;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    height: 15vh;
+    border-radius: 7px;
+    padding: 2px; 
+}
+
+.top-bar-left {
+    display: flex;
+    align-self: center;
+    background: #c9c9c9;
+    margin: 5px;
+    padding:30px;
+    font-size: 20px;
+}
+
+.top-bar-right {
+    display: flex;
+    align-self: center;
+    background: #395363;
+    margin: 5px;
+    padding:30px;
+    font-size: 20px;
+}
+
+.main-container {
+    display:flex;
+    background-color: #c9c9c9;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 10px;
+    border-radius: 7px;
+    padding: 10px; 
+}
+
+.github-button {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%); 
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.github-button:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.github-button:active {
+	position:relative;
+	top:1px;
+}
+
+.title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.6px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
