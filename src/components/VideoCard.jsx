@@ -15,7 +15,7 @@ export default function VideoCard() {
                 avatar={ <Avatar aria-label="recipe" /> }
                 title={call.name || "User Name"}/>
               <CardMedia>
-                <video playsInline muted red={myVideo} autoplay />
+                <video playsInline muted ref={myVideo} autoplay > </video>
               </CardMedia>
             </Card>
           </Grid>

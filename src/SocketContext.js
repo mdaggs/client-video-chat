@@ -4,8 +4,8 @@ import Peer from 'simple-peer';
 
 const SocketContext = createContext();
 
-// const socket = io("htp://localhost:4000");
-const socket = io("https://tug-chat.herokuapp.com");
+// const socket = io("https://localhost:4000");
+const socket = io("https://server-tug-chat.herokuapp.com");
 
 const ContextProvider = ({ children }) => {
 
