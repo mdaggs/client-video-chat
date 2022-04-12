@@ -8,13 +8,13 @@ import Video from './components/Video'
 function App() {
   
   return (
-      // <ThemeProvider theme={theme}>
-      //   <TopBar />
-      //   <MainContainer />
-      // </ThemeProvider>
-      <>
-        <Video />
-      </>
+      <ThemeProvider theme={theme}>
+        <TopBar />
+        <MainContainer />
+      </ThemeProvider>
+      // <>
+      //   <Video />
+      // </>
   );
 }
 

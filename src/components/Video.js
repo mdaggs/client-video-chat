@@ -23,9 +23,11 @@ export default function AudioVideo() {
     .catch(function(err) { console.log(err.name + ": " + err.message); }); // always check for errors at the end.
   }
 
-  return <div>
-            {/* <video id="video">Video not Available</video> */}
-            <video id="video" allow="camera;microphone" class="silhouetteVideo" autoplay playsinline controls="false"></video>
+  return (
+      <div>
+            <video id="video">Video not Available</video>
+            {/* <video id="video" allow="camera;microphone" class="silhouetteVideo" autoplay playsinline controls="false"></video> */}
             <button onClick={handleSubmit}>Audio/Video</button>
-        </div>;
+        </div>
+  )
 }
