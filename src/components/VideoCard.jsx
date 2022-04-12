@@ -4,6 +4,15 @@ import { SocketContext } from '../SocketContext';
 
 export default function VideoCard() {
   const { name, callAccepted, myVideo, userVideo, callEnded, stream, call} = useContext(SocketContext);
+
+  console.log(name)
+  console.log(callAccepted)
+  console.log(myVideo)
+  console.log(userVideo)
+  console.log(callEnded)
+  console.log(stream)
+  console.log(call)
+  
   return (
     <Grid container spacing={4} justify="center" >
       {/* something something soemthing */}
@@ -15,7 +24,7 @@ export default function VideoCard() {
                 avatar={ <Avatar aria-label="recipe" /> }
                 title={call.name || "User Name"}/>
               <CardMedia>
-                <video playsInline muted ref={myVideo} autoplay > </video>
+                <video playsInline muted ref={myVideo} autoPlay > </video>
               </CardMedia>
             </Card>
           </Grid>

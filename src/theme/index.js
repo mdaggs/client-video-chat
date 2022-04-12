@@ -1,10 +1,10 @@
-import { createMuiTheme } from '@mui/material';
+import { createTheme } from '@mui/material/styles'
 
 import palette from "./palette";
 import typography from "./typography";
 import overrides from "./overrides";
 
-const theme = createMuiTheme({
+const theme = createTheme({
     palette,
     typography,
     overrides,
