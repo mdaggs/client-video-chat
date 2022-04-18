@@ -3,7 +3,6 @@ import { TopBar, MainContainer } from './components';
 import { ThemeProvider } from '@mui/material';
 import theme from "./theme";
 import './index.css';
-import Video from './components/Video'
 
 function App() {
   
@@ -12,9 +11,6 @@ function App() {
         <TopBar />
         <MainContainer />
       </ThemeProvider>
-      // <>
-      //   <Video />
-      // </>
   );
 }
 
