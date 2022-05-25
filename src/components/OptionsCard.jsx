@@ -2,6 +2,7 @@ import { Container, Grid, Paper, TextField, Typography, Button } from '@mui/mate
 import { Assignment, Phone, PhoneDisabled} from '@mui/icons-material';
 import React, { useContext, useState } from 'react'
 import { SocketContext } from '../SocketContext'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 const OptionsCard = ({ children }) => {
   const {me, callAccepted, name, setName, callEnded, leaveCall, callUser} = useContext(SocketContext);
@@ -20,6 +21,7 @@ const OptionsCard = ({ children }) => {
                               fullWidth
                               onChange={(e)=> setName(e.target.value)}
                           />
+                          <CopyToClipboard text={me}>
                               <Button 
                                   variant="contained" 
                                   color="primary" 
@@ -28,6 +30,7 @@ const OptionsCard = ({ children }) => {
                               >
                                   Copy Your ID
                               </Button>
+                            </CopyToClipboard>
                           </Paper>
                       </Grid>
 

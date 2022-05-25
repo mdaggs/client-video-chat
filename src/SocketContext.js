@@ -21,6 +21,7 @@ const ContextProvider = ({ children }) => {
     const userVideo = useRef();
     const connectionRef = useRef();
 
+
     useEffect(() =>{
         const constraints = { audio: true,
             video: {
@@ -33,6 +34,15 @@ const ContextProvider = ({ children }) => {
             setStream(currentStream);
             myVideo.current.srcObject = currentStream;
         });
+        // const getUserMedia = async () => {
+        //     try {
+        //       const stream = await navigator.mediaDevices.getUserMedia({video: true});
+        //       videoRef.current.srcObject = stream;
+        //     } catch (err) {
+        //       console.log(err);
+        //     }
+        //   };
+        //   getUserMedia();
             
 
         socket.on("me", (id) =>{
@@ -45,7 +55,7 @@ const ContextProvider = ({ children }) => {
 
     },[]);
 
-    const answerCall = ()=> {
+    const answerCall = () => {
 
         setCallAccepted(true);
 
